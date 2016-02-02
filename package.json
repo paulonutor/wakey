@@ -1,0 +1,30 @@
+{
+  "name": "wakey",
+  "version": "0.1.0",
+  "description": "A wakelight server running on the Raspberry Pi.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Onutor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulonutor/wakey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulonutor/wakey/issues"
+  },
+  "homepage": "https://github.com/paulonutor/wakey#readme",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-eslint": "^4.1.8",
+    "babel-preset-es2015-node4": "^2.0.3",
+    "babel-tape-runner": "^2.0.0",
+    "eslint": "^1.10.3",
+    "tape": "^4.4.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
