@@ -4,7 +4,10 @@
   "description": "A wakelight server running on the Raspberry Pi.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-file server.js",
+    "prepublish": "npm run build",
+    "dev": "nodemon src/server.js --exec babel-node"
   },
   "author": "Paul Onutor",
   "license": "MIT",
@@ -22,9 +25,13 @@
     "babel-preset-es2015-node4": "^2.0.3",
     "babel-tape-runner": "^2.0.0",
     "eslint": "^1.10.3",
+    "nodemon": "^1.8.1",
     "tape": "^4.4.0"
   },
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "optionalDependencies": {
+    "i2c": "^0.2.1"
   }
 }
