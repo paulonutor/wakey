@@ -1,2 +1,2 @@
 # wakey
-A wakelight server running on the Raspberry Pi.
+A wakelight running on Arduino or the ESP8266.
